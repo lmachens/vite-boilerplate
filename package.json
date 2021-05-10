@@ -2,8 +2,11 @@
   "name": "vite-boilerplate",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "client:dev": "vite",
+    "server:dev": "ts-node --project tsconfig.server.json src/server",
+    "server:build": "tsc --project tsconfig.server.json",
+    "client:build": "vite build",
+    "build": "npm run client:build && npm run server:build",
     "serve": "vite preview",
     "prepare": "husky install",
     "test": "prettier --check . && eslint . && stylelint \"**/*.css\""
@@ -20,6 +23,7 @@
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.4",
     "vite": "^2.2.3"
   }
