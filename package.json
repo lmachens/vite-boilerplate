@@ -11,7 +11,8 @@
     "serve": "vite preview",
     "prepare": "husky install",
     "test": "tsc && prettier --check . && eslint . && stylelint \"**/*.css\"",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "start": "node dist/server.js"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
