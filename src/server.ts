@@ -4,9 +4,11 @@ const { PORT = 3000 } = process.env;
 
 const app = express();
 
-app.get('/', (_req, res) => {
-  res.send('Hello World!');
-});
+// Serve storybook production bundle
+app.use('/storybook', express.static('dist/storybook'));
+
+// Serve app production bundle
+app.use(express.static('dist/app'));
 
 app.listen(PORT, () => {
   console.log(`photoplay app listening at http://localhost:${PORT}`);
