@@ -11,5 +11,5 @@ app.use('/storybook', express.static('dist/storybook'));
 app.use(express.static('dist/app'));
 
 app.listen(PORT, () => {
-  console.log(`photoplay app listening at http://localhost:${PORT}`);
+  console.log(`Server listening at http://localhost:${PORT}`);
 });
