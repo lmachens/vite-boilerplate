@@ -8,7 +8,7 @@ function App(): JSX.Element {
 
   return (
     <Router>
-      <div className={styles.App}>
+      <div className={`${styles.App} container mx-auto px-4`}>
         <header className={styles['App-header']}>
           <img src={logo} className={styles['App-logo']} alt="logo" />
           <p>Hello Vite + React!</p>
