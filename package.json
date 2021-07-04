@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "client:dev": "vite",
-    "server:dev": "ts-node --project tsconfig.server.json src/server",
+    "server:dev": "ts-node-dev --project tsconfig.server.json src/server",
     "server:build": "tsc --project tsconfig.server.json",
     "client:build": "vite build",
     "storybook:build": "build-storybook -o dist/storybook",
@@ -38,7 +38,7 @@
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
-    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.2.4",
     "vite": "^2.3.8"
   },
