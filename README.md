@@ -20,15 +20,22 @@ npm install
 This will install the dependencies required to run the boilerplate.
 
 ```shell
-npm run client:dev
-npm run server:dev
+npm run dev
 ```
 
-Boom! These scripts run your client and server in development mode.
+Boom! These scripts run your server, client and storybook in development mode.
 
-If you like to work with Storybook, you can run it like this:
+The default PORTS are:
+
+- `3001` for the server
+- `3000` for the client
+- `3000` for the storybook
+
+If you don't like to call all scripts at once, you can also run:
 
 ```shell
+npm run server:dev
+npm run client:dev
 npm run storybook
 ```
 
