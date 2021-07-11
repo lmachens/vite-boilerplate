@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import styles from './App.module.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Welcome from './components/Welcome/Welcome';
 
 function App(): JSX.Element {
   const [count, setCount] = useState<number>(0);
@@ -11,7 +12,7 @@ function App(): JSX.Element {
       <div className={styles.App}>
         <header className={styles['App-header']}>
           <img src={logo} className={styles['App-logo']} alt="logo" />
-          <p>Hello Vite + React!</p>
+          <Welcome />
           <p>
             <button onClick={() => setCount((count) => count + 1)}>
               count is: {count}
