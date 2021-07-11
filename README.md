@@ -39,6 +39,12 @@ npm run client:dev
 npm run storybook
 ```
 
+You can configure the server port by setting the `PORT` environment variable. Creating a `.env` file is supported.
+
+| KEY  | VALUE                                                         |
+| ---- | ------------------------------------------------------------- |
+| PORT | (Optional) Port for the server environment (defaults to 3001) |
+
 ## Building
 
 To build the project, run:
