@@ -39,7 +39,7 @@ npm run client:dev
 npm run storybook
 ```
 
-You can configure the server port by setting the `PORT` environment variable. Creating a `.env` file is supported.
+You can configure the server port by setting the `PORT` environment variable. Creating a `.env` file is supported. You can copy `.env.example` to `.env`.
 
 | KEY  | VALUE                                                         |
 | ---- | ------------------------------------------------------------- |
