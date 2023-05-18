@@ -20,5 +20,6 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["./src/app"]
+  "include": ["./src/app"],
+  "exclude": ["node_modules"]
 }
