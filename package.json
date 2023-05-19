@@ -6,7 +6,6 @@
     "client:build": "vite build",
     "client:dev": "vite",
     "dev": "concurrently \"yarn run server:dev\" \"yarn run client:dev\" \"yarn run storybook\"",
-    "old-storybook:build": "storybook build -o dist/storybook",
     "prepare": "husky install",
     "serve": "vite preview",
     "server:build": "tsc --project tsconfig.server.json",
@@ -14,6 +13,7 @@
     "start": "node dist/server.js",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build -o dist/storybook",
+    "storybook:build-old": "storybook build -o dist/storybook",
     "test": "tsc && prettier --check . && eslint . && stylelint \"**/*.css\""
   },
   "dependencies": {
