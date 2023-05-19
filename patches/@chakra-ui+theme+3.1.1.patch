@@ -3785,10 +3785,21 @@ index d75e8bb..5511a71 100644
                  } | {
                      [x: string]: string | {
 diff --git a/node_modules/@chakra-ui/theme/dist/index.d.ts b/node_modules/@chakra-ui/theme/dist/index.d.ts
-index 3067c6d..bc23026 100644
+index 3067c6d..316a6d9 100644
 --- a/node_modules/@chakra-ui/theme/dist/index.d.ts
 +++ b/node_modules/@chakra-ui/theme/dist/index.d.ts
-@@ -1632,12 +1632,12 @@ declare const theme: {
+@@ -1,8 +1,9 @@
+-import * as _chakra_ui_theme_tools from '@chakra-ui/theme-tools';
+ import * as _chakra_ui_styled_system from '@chakra-ui/styled-system';
++import * as _chakra_ui_theme_tools from '@chakra-ui/theme-tools';
+ import { ThemeConfig } from './theme.types.js';
+ export { ChakraTheme, ColorHues, Colors, ComponentDefaultProps, ComponentMultiStyleConfig, ComponentSingleStyleConfig, ComponentStyleConfig, RecursiveObject, RecursiveProperty, SystemStyleObjectRecord, ThemeComponentFunction, ThemeComponentProps, ThemeComponents, ThemeConfig, ThemeDirection, ThemeTransitions, ThemingPropsThunk } from './theme.types.js';
+ export { isChakraTheme, requiredChakraThemeKeys } from './utils/is-chakra-theme.js';
++export { Theme, baseTheme, theme as default, theme };
+ 
+ declare const theme: {
+     components: {
+@@ -1632,12 +1633,12 @@ declare const theme: {
                  };
                  stepper: {
                      [x: string]: string | {
@@ -3803,7 +3814,7 @@ index 3067c6d..bc23026 100644
                              [x: string]: string;
                          };
                          _dark: {
-@@ -1892,7 +1892,7 @@ declare const theme: {
+@@ -1892,7 +1893,7 @@ declare const theme: {
                  };
                  content: {
                      [x: string]: string | {
@@ -3812,7 +3823,7 @@ index 3067c6d..bc23026 100644
                          outline?: undefined;
                          boxShadow?: undefined;
                      } | {
-@@ -2656,7 +2656,7 @@ declare const theme: {
+@@ -2656,7 +2657,7 @@ declare const theme: {
                  };
                  track: {
                      [x: string]: string | string[] | {
@@ -3821,7 +3832,7 @@ index 3067c6d..bc23026 100644
                          boxShadow?: undefined;
                          opacity?: undefined;
                          cursor?: undefined;
-@@ -2672,7 +2672,7 @@ declare const theme: {
+@@ -2672,7 +2673,7 @@ declare const theme: {
                          boxShadow?: undefined;
                          _dark?: undefined;
                      } | {
@@ -3830,7 +3841,7 @@ index 3067c6d..bc23026 100644
                              [x: string]: string;
                          };
                          _dark: {
-@@ -2968,7 +2968,7 @@ declare const theme: {
+@@ -2968,7 +2969,7 @@ declare const theme: {
                      };
                      tab: {
                          [x: string]: string | {
@@ -3839,7 +3850,7 @@ index 3067c6d..bc23026 100644
                                  [x: string]: string;
                              };
                              _dark: {
-@@ -2977,7 +2977,7 @@ declare const theme: {
+@@ -2977,7 +2978,7 @@ declare const theme: {
                              borderColor: string;
                              _active?: undefined;
                          } | {
@@ -3848,7 +3859,7 @@ index 3067c6d..bc23026 100644
                                  [x: string]: string;
                              };
                              _dark: {
-@@ -3056,7 +3056,7 @@ declare const theme: {
+@@ -3056,7 +3057,7 @@ declare const theme: {
                  "enclosed-colored": (props: _chakra_ui_styled_system.StyleFunctionProps) => {
                      tab: {
                          [x: string]: string | {
@@ -3857,7 +3868,7 @@ index 3067c6d..bc23026 100644
                              marginEnd?: undefined;
                              _dark?: undefined;
                              borderColor?: undefined;
-@@ -3069,7 +3069,7 @@ declare const theme: {
+@@ -3069,7 +3070,7 @@ declare const theme: {
                              borderTopColor?: undefined;
                              borderBottomColor?: undefined;
                          } | {
@@ -3866,7 +3877,7 @@ index 3067c6d..bc23026 100644
                                  [x: string]: string;
                              };
                              _dark: {
-@@ -3123,7 +3123,7 @@ declare const theme: {
+@@ -3123,7 +3124,7 @@ declare const theme: {
                  "solid-rounded": (props: _chakra_ui_styled_system.StyleFunctionProps) => {
                      tab: {
                          [x: string]: string | {
@@ -3875,6 +3886,34 @@ index 3067c6d..bc23026 100644
                              _dark?: undefined;
                          } | {
                              [x: string]: string | {
+@@ -3423,8 +3424,8 @@ declare const theme: {
+                         alignItems: string;
+                     } | {
+                         [x: string]: string;
+-                        flexDirection?: undefined;
+-                        alignItems?: undefined;
++                        flexDirection: string;
++                        alignItems: string;
+                     };
+                     display: string;
+                     justifyContent: string;
+@@ -3437,9 +3438,7 @@ declare const theme: {
+                         flexDirection: string;
+                         alignItems: string;
+                     };
+-                    _dark: {
+-                        [x: string]: string;
+-                    };
++                    _dark: string;
+                 };
+                 title: {
+                     fontSize: string;
+@@ -4545,4 +4544,4 @@ declare const baseTheme: {
+     components: {};
+ };
+ 
+-export { Theme, baseTheme, theme as default, theme };
++
 diff --git a/node_modules/@chakra-ui/theme/dist/index.d.ts.orig b/node_modules/@chakra-ui/theme/dist/index.d.ts.orig
 new file mode 100644
 index 0000000..3067c6d
