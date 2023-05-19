@@ -6,6 +6,7 @@
     "client:build": "vite build",
     "client:dev": "vite",
     "dev": "concurrently \"yarn run server:dev\" \"yarn run client:dev\" \"yarn run storybook\"",
+    "postinstall": "patch-package",
     "prepare": "husky install",
     "serve": "vite preview",
     "server:build": "tsc --project tsconfig.server.json",
@@ -13,7 +14,6 @@
     "start": "node dist/server.js",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build -o dist/storybook",
-    "storybook:build-old": "storybook build -o dist/storybook",
     "test": "tsc && prettier --check . && eslint . && stylelint \"**/*.css\""
   },
   "dependencies": {
@@ -55,13 +55,14 @@
     "http-proxy-middleware": "^2.0.6",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
+    "patch-package": "^7.0.0",
     "prettier": "2.8.8",
     "storybook": "^7.0.12",
     "stylelint": "^15.6.2",
-    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^33.0.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4",
-    "vite": "^4.3.8"
+    "vite": "^4.3.8",
+    "webpack": ">=5"
   }
 }
