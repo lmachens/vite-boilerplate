@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate",
+  "name": "vite-boilerplate",
   "version": "0.0.0",
   "scripts": {
     "build": "yarn run server:build && yarn run client:build && yarn run storybook:build",
@@ -19,9 +19,11 @@
   "dependencies": {
     "@chakra-ui/layout": "^2.1.19",
     "@chakra-ui/react": "^2.6.1",
+    "@chakra-ui/storybook-addon": "^4.0.16",
     "@chakra-ui/system": ">=2.0.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "framer-motion": "^10.12.12",
@@ -31,14 +33,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
-    "@chakra-ui/storybook-addon": "^4.0.16",
     "@storybook/addon-actions": "^7.0.12",
     "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-links": "^7.0.12",
+    "@storybook/builder-vite": "^7.0.12",
     "@storybook/cli": "^7.0.12",
     "@storybook/react": "^7.0.12",
     "@storybook/react-vite": "^7.0.12",
     "@storybook/testing-library": "^0.1.0",
+    "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/node": "^20.2.0",
     "@types/react": "^18.2.6",
