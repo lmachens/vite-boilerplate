@@ -14,13 +14,13 @@ First, [create a repository from this template](https://docs.github.com/en/githu
 Now you are ready to go:
 
 ```shell
-npm install
+yarn
 ```
 
 This will install the dependencies required to run the boilerplate.
 
 ```shell
-npm run dev
+yarn dev
 ```
 
 Boom! These scripts run your server, client and storybook in development mode.
@@ -34,9 +34,9 @@ The default PORTS are:
 If you don't like to call all scripts at once, you can also run:
 
 ```shell
-npm run server:dev
-npm run client:dev
-npm run storybook
+yarn run server:dev
+yarn run client:dev
+yarn run storybook
 ```
 
 You can configure the server port by setting the `PORT` environment variable. Creating a `.env` file is supported. You can copy `.env.example` to `.env`.
@@ -50,13 +50,13 @@ You can configure the server port by setting the `PORT` environment variable. Cr
 To build the project, run:
 
 ```shell
-npm run build
+yarn build
 ```
 
 This will build the client, server and storybook.
 
 ```shell
-npm start
+yarn start
 ```
 
 In production, you have a single server serving everything.

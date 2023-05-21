@@ -11,6 +11,6 @@ module.exports = function (app) {
     createProxyMiddleware({
       target: `http://localhost:${PORT}`,
       changeOrigin: true,
-    })
+    }),
   );
 };

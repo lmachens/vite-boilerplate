@@ -2,8 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+    default-src 'self' ;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/css ;
+    font-src 'self' 'unsafe-inline' https://fonts.gstatic.com/ ;
+    "
+    />
     <link rel="icon" type="image/svg+xml" href="/src/app/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900" />
     <title>Vite App</title>
   </head>
   <body>
