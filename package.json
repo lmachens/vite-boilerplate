@@ -17,10 +17,6 @@
     "test": "tsc && prettier --check . && eslint . && stylelint \"**/*.css\""
   },
   "dependencies": {
-    "@chakra-ui/layout": "^2.1.19",
-    "@chakra-ui/react": "^2.6.1",
-    "@chakra-ui/storybook-addon": "^4.0.16",
-    "@chakra-ui/system": ">=2.0.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "cors": "^2.8.5",
@@ -43,7 +39,7 @@
     "@storybook/testing-library": "^0.1.0",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
-    "@types/node": "^20.2.0",
+    "@types/node": "^20.2.1",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "@types/react-router-dom": "^5.3.3",
@@ -52,7 +48,7 @@
     "@vitejs/plugin-react": "^4.0.0",
     "babel-loader": "^9.1.2",
     "concurrently": "^8.0.1",
-    "eslint": "^8.40.0",
+    "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-storybook": "^0.6.12",
     "http-proxy-middleware": "^2.0.6",

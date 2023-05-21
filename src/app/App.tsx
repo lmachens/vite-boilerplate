@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Route, BrowserRouter as Router, Routes as Switch } from 'react-router-dom';
 import styles from './App.module.css';
+import { Button } from './components/Button/Button';
 import Welcome from './components/Welcome/Welcome';
 import logo from './logo.svg';
 
@@ -14,7 +15,11 @@ function App(): JSX.Element {
           <img src={logo} className={styles['App-logo']} alt="logo" />
           <Welcome />
           <p>
-            <button onClick={() => setCount((count) => count + 1)}>count is: {count}</button>
+            <Button
+              onClick={() => setCount((count) => count + 1)}
+              label={'count is: ' + count}
+              backgroundColor={'white'}
+            />
           </p>
           <p>
             Edit <code>App.tsx</code> and save to test HMR updates.

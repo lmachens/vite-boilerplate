@@ -16,10 +16,10 @@
     "jsx": "react",
     "allowJs": false,
     "isolatedModules": true,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
   },
   "include": ["./src/app"],
-  "exclude": ["node_modules"]
+  "exclude": ["**/node_modules"]
 }
