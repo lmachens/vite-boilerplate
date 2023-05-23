@@ -14,7 +14,7 @@
     "start": "node dist/server.js",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build -o dist/storybook",
-    "test": "tsc && prettier --check . && eslint . && stylelint \"**/*.css\""
+    "test": "tsc --noEmit && prettier --check . && eslint . && stylelint \"**/*.css\""
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
