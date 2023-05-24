@@ -1,5 +1,5 @@
+import { Preview } from '@storybook/react';
 import React from 'react';
-import { addDecorator } from '@storybook/react';
 import { MemoryRouter } from 'react-router-dom';
 
 import '../src/app/globals.css';
@@ -14,4 +14,8 @@ export const parameters = {
   },
 };
 
-addDecorator((story) => <MemoryRouter>{story()}</MemoryRouter>);
+const preview: Preview = {
+  decorators: [(story) => <MemoryRouter>{story()}</MemoryRouter>],
+};
+
+export default preview;

@@ -1,0 +1,19 @@
+name: Check
+
+on:
+  push:
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Install packages
+        run: yarn install --frozen-lockfile
+      - name: Check
+        run: yarn test
